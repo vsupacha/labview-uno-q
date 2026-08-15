@@ -1,0 +1,6 @@
+name: UNO Q toolkit
+description: This UNO Q app implements a gateway between LabVIEW and the STM32U585 peripherals. Instead of using the Serial/TCP Remote I/O protocol of the
+ports: []
+bricks:
+- arduino:web_ui: {}
+icon: 😀
