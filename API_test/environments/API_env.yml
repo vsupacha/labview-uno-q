@@ -1,0 +1,5 @@
+name: API_env
+variables:
+  - name: base_url
+    value: 192.168.1.120:7000
+    description: ""
