@@ -6,6 +6,16 @@ Instead of communicating directly with a conventional Arduino firmware over a se
 
 Project article: https://www.hackster.io/vsupacha/using-uno-q-with-labview-cd8c2f
 
+## Using this repo
+
+### 1. Install the app on the UNO Q
+
+The board-side app is `ArduinoApps/uno-q-toolkit/` — STM32 firmware in `sketch/`, the Debian-side gateway in `gateway/`, and the App Lab entry point in `python/`. Install it with **Arduino App Lab**: open App Lab on the UNO Q, create or open the `uno-q-toolkit` app, and copy the contents of each file under `ArduinoApps/uno-q-toolkit/` into the matching file in App Lab's own editor (`app.yaml`, `python/main.py`, `gateway/app.py`, `gateway/requirements.txt`, and everything under `sketch/`). Press Start — App Lab compiles the STM32 sketch and starts the Python gateway together, no separate build step.
+
+### 2. Open the LabVIEW project
+
+Open `labview/LabVIEW UNO Q toolkit.lvproj` in **LabVIEW 2021 or later**. It contains the hardware-access API VIs (`UNO Q connect`/`disconnect`, `PinMode`, `DigitalRead`/`DigitalWrite`, `AnalogRead`, `LED control`) and demo VIs (`Demo - blink`, `Demo - din`, `Demo - dout`, `Demo - plot`) showing how to call them from a LabVIEW application.
+
 ## Why LabVIEW?
 
 LabVIEW is designed for measurement, instrumentation, automation, and hardware interfacing. Its graphical dataflow model makes it convenient to combine:

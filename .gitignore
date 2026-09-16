@@ -1,1 +1,12 @@
-Figures.pptx
+# Keep the repository focused on the ArduinoApps and labview sources.
+*
+!/.gitignore
+!/README.md
+!/labview/
+!/labview/**
+!/ArduinoApps/
+!/ArduinoApps/**
+
+# Android Platform-Tools are installed locally for board access and are not
+# committed. Download them from the official Android distribution on each PC.
+/platform-tools/
