@@ -1,6 +1,7 @@
 # Keep the repository focused on the ArduinoApps and labview sources.
 *
 !/.gitignore
+!/.gitattributes
 !/README.md
 !/labview/
 !/labview/**
